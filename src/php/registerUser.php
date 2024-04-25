@@ -35,6 +35,8 @@ $name = $data['name'];
 $email = $data['email'];
 $password = $data['password'] ;/* password_hash($data['password'], PASSWORD_DEFAULT); */
 $pronoun = $data['pronoun'];
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+$password = $hashed_password
 
 
 // Write a query to get the user_id from the database using the name and email
